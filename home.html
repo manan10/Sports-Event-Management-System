@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>CO-Olympics | Home</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Lobster|Josefin+Sans|Germania+One" rel="stylesheet">
+		<style>
+			button
+			{
+				font-size:20px;
+				background-color:rgba(253,0,0,0.8);
+				border-style:transparent;
+				color:white;
+				height:45px;
+				width:140px;
+				border-radius:10px;
+				margin-left:1150px;
+			}
+			
+			body
+			{
+				background-image:url('h1.jpg');
+				background-size:cover;
+				background-repeat:no-repeat;
+			}
+		
+			a:link, a:hover, a:active, a:visited
+			{
+				color:white;
+				text-decoration:none;
+			}
+		</style>
+	</head>
+
+	<body>
+		<center>
+			<nav class="navbar navbar-default" style="font-size:18px; border-radius:0px; background-color:rgba(0,0,0,0); border-width:0px; font-family: josefin sans;">
+  				<div class="container-fluid">
+    				<div class="navbar-header" style="font-family: snap itc;">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>                        
+						</button>
+						<a class="navbar-brand" href="home.html">CO-Olympics</a>
+    				</div>
+					<div class="collapse navbar-collapse" id="myNavbar">
+    				<ul class="nav navbar-nav navbar-right">
+					
+						<li class="active"><a href="#">Home</a></li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Events
+								<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu" style="background-color:lightgrey;color:black;">
+								<li><a href="EventHome/Events/ev_main.html">Event Home</a></li>							
+								<li><a href="EventHome/Events/cricket.html">Cricket</a></li>
+								<li><a href="EventHome/Events/football.html">Football</a></li>
+								<li><a href="EventHome/Events/badminton.html">Badminton</a></li>
+								<li><a href="EventHome/Events/volleyball.html">Volleyball</a></li>
+								<li><a href="EventHome/Events/tt.html">Table Tennis</a></li>
+								<li><a href="EventHome/Events/chess.html">Chess</a></li>
+								<li><a href="EventHome/Events/relay.html">Relay race</a></li>
+								<li><a href="EventHome/Events/3legged.html">Three-Legged race</a></li>
+								<li><a href="EventHome/Events/sack.html">Sack race</a></li>
+								<li><a href="EventHome/Events/tow.html">Tug of War</a></li>
+								<li><a href="EventHome/Events/lemon.html">Lemon-Spoon race</a></li>
+        					</ul>
+						</li>
+						<li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login </a></li>
+					</ul>
+				</div>
+				</div>
+			</nav> 	
+			<h1 style="font-family:lobster;font-size:65px;margin-top:40px; color:#f2f2f2;"> Sarvajanik College of Engineering & Technology </h1>
+			<p style="font-family:josefin sans;font-size:25px;color:#f2f2f2;"> Computer Engineering Department presents</p>
+			<h1 style="font-family:snap itc;font-size:120px;color:#f2f2f2;">CO-Olympics</h2>
+			<button type="button" name="Events" style="margin-top:200px; font-family: josefin sans" onclick="elist();"> Goto Events </button>
+			<br>
+		</center>
+	</body>
+
+	<script>
+		function elist()
+		{
+			window.open("EventHome/Events/ev_main.html","_top");
+		}
+	</script>
+</html>

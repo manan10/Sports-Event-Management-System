@@ -1,0 +1,105 @@
+<html>
+	<head>
+		<title> Cricket | Registration </title>
+		<link rel="stylesheet" href="register.css" type="text/css">
+		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+ 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|ZCOOL+XiaoWei" rel="stylesheet">
+		<style>
+			.tb
+			{
+				height:40px; 
+				border-radius:5px;
+				background-color:lightgrey;
+				font-family: calibri;
+			}
+
+			label
+			{
+				font-size: 22px;
+				font-weight: normal;
+				padding-right: 70px;
+				padding-left: 20px;
+			}
+
+			.glyphicon
+			{
+				font-size: 10px;
+			}
+		</style>
+	</head>
+	
+	<body class="shome">
+		<center>
+			<form class="form-inline" action="RegisterPHP/cric_reg.php" name="myform" method="POST">
+				<fieldset class="box">
+					<h1 style="font-family: zcool xiaowei"><u> Team Registration </u></h1>
+					<hr><br><br>
+					<div class="form-group">
+						<label for="team">&nbsp&nbsp&nbspTeam:</label> 
+						<input type="text" class="form-control tb" id="team" name="team" placeholder="Team name" style="width:300px;" required>
+					</div>&nbsp;<sup><span class="glyphicon glyphicon-asterisk"></span></sup> 
+					<br><br>
+					<div class="form-group">
+						<label for="p1">Player 1:</label> 
+						<input type="text" class="form-control tb" id="p1" name="p1" placeholder="player 1" style="width:300px;" required>
+					</div>&nbsp;<sup><span class="glyphicon glyphicon-asterisk"></span></sup> 
+					<br><br>
+					<div class="form-group">
+						<label for="p2">Player 2:</label> 
+						<input type="text" class="form-control tb" id="p2" name="p2" placeholder="player 2" style="width:300px;" required>
+					</div>&nbsp;<sup><span class="glyphicon glyphicon-asterisk"></span></sup> 
+					<br><br>
+					<div class="form-group">
+						<label for="p3">Player 3:</label> 
+						<input type="text" class="form-control tb" id="p3" name="p3" placeholder="player 3" style="width:300px;" required>
+					</div>&nbsp;<sup><span class="glyphicon glyphicon-asterisk"></span></sup> 
+					<br><br>
+					<div class="form-group">
+						<label for="p4">Player 4:</label> 
+						<input type="text" class="form-control tb" id="p4" name="p4" placeholder="player 4" style="width:300px;" required>
+					</div>&nbsp;<sup><span class="glyphicon glyphicon-asterisk"></span></sup> 
+					<br><br>
+					<div class="form-group">
+						<label for="p5">Player 5:</label> 
+						<input type="text" class="form-control tb" id="p5"  name="p5" placeholder="player 5" style="width:300px;" required>
+					</div>&nbsp;<sup><span class="glyphicon glyphicon-asterisk"></span></sup> 
+					<br><br>
+					<div class="form-group">
+						<label for="p6">Player 6:</label> 
+						<input type="text" class="form-control tb" id="p6" name="p6" placeholder="player 6" style="width:300px;" required>
+					</div>&nbsp;<sup><span class="glyphicon glyphicon-asterisk"></span></sup>
+					<br><br>
+					<div class="form-group">
+					 	<label for="Contact">Contact: </label>
+						<input type="text" class="form-control tb" id="con" name="phno" placeholder="Phone Number (Captain)" pattern="[0-9]{10}" style="width:300px;" required > 
+					</div>&nbsp;<sup><span class="glyphicon glyphicon-asterisk"></span></sup>
+					<br><br>
+					<div class="form-group">
+						<label for="year">Academic Year:</label>
+						<input type="radio" name="year" id="name" value="1" checked> 1 &nbsp;&nbsp;
+						<input type="radio" name="year" id="name" value="2"> 2 &nbsp;&nbsp;
+						<input type="radio" name="year" id="name" value="3"> 3 &nbsp;&nbsp;
+						<input type="radio" name="year" id="name" value="4"> 4 &nbsp;&nbsp;
+					</div>
+					<br><br>
+
+					<div class="form-group">
+						<label for="shift">Shift:</label>
+						<input type="radio" name="shift" id="shift" value="1" checked> Morning &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="radio" name="shift" id="shift" value="2"> Evening
+					</div>
+					<br><br><br>
+					<div>
+						<button  type="submit" name="sub" class="button1"> Submit </button> &nbsp; &nbsp;
+						<button type="reset" name="res" class="button1"> Reset </button> <br> <br>
+					</div>
+				</fieldset>
+			</form>
+		</center>
+	</body>
+	
+</html>

@@ -1,0 +1,92 @@
+<html lang="en">
+	<head>
+		<title> CO-Olympics | Login </title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+		<style>
+			.fp a:link, .fp a:visited
+			{
+				text-decoration: none;
+				color: silver;
+			}
+
+			.fp a:hover
+			{
+				text-decoration: underline;
+				color: yellow;
+			}
+
+			.fp a:active
+			{
+				text-decoration: underline;
+				color: red;
+			}
+		</style>
+	</head>
+	
+	<body style="background-color: #0d1a26;">
+		<nav class="navbar navbar-default" style="font-size:18px; border-radius:0px; background-color:rgba(0,0,0,0); border-width:0px; font-family: josefin sans;">
+			<div class="container-fluid">
+				<div class="navbar-header">
+			  		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					  	<span class="icon-bar"></span>
+					  	<span class="icon-bar"></span>
+					  	<span class="icon-bar"></span>                        
+			  		</button>
+				  	<a class="navbar-brand" href="home.html" style="font-family:snap itc;">CO-Olympics</a>
+			 	</div>
+			  
+				<div class="collapse navbar-collapse" id="myNavbar">
+			  		<ul class="nav navbar-nav navbar-right">
+						<li><a href="home.html">Home</a></li>
+				  		<li class="dropdown">
+					  		<a class="dropdown-toggle" data-toggle="dropdown" href="#">Events
+						  		<span class="caret"></span>
+					  		</a>
+					  		<ul class="dropdown-menu" style="background-color:lightgrey;color:black;">
+						  		<li><a href="EventHome/Events/ev_main.html">Event Home</a></li>								
+						  		<li><a href="EventHome/Events/cricket.html">Cricket</a></li>
+						 		<li><a href="EventHome/Events/football.html">Football</a></li>
+								<li><a href="EventHome/Events/badminton.html">Badminton</a></li>
+								<li><a href="EventHome/Events/volleyball.html">Volleyball</a></li>
+								<li><a href="EventHome/Events/tt.html">Table Tennis</a></li>
+								<li><a href="EventHome/Events/chess.html">Chess</a></li>
+								<li><a href="EventHome/Events/relay.html">Relay race</a></li>
+								<li><a href="EventHome/Events/3legged.html">Three-Legged race</a></li>
+								<li><a href="EventHome/Events/sack.html">Sack race</a></li>
+								<li><a href="EventHome/Events/tow.html">Tug of War</a></li>
+								<li><a href="EventHome/Events/lemon.html">Lemon-Spoon race</a></li>
+					  		</ul>
+				  		</li>
+				  		<li class="active"><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login </a></li>
+			  		</ul>
+	  			</div>
+	  		</div>
+		</nav>
+		
+		<div class="container" style="width: 500px;height: 280px;margin-top: 80px; color:white; background-color: #000000; border-style: double; border-width: 3px; border-color: #0d1a26;">
+			<br> <br>
+			<form action="login.php" method="POST">
+				<div class="form-group">
+					<label for="un">Username:</label>
+					<input type="text" class="form-control" id="un" name="un" placeholder="Username">
+				</div>
+				<div class="form-group">
+					<label for="pwd">Password:</label>
+					<input type="password" class="form-control" id="pwd" name="pwd" placeholder="Password">
+				</div>
+				<div style="margin-top:-10px;" class="fp">
+					<a href="forget_pass.html" style="float:right;"> Forget Password?</a>
+				</div>
+				<br> <br>
+				<div>
+					<button type="submit" class="btn btn-default" style="float:right;">Submit</button>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>
